@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Thousands of random markers</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <div id="map"></div>
+    <div>
+      <button id="draw-button" type="button" onclick="setMarkers()" disabled>Pintar puntos</button>
+      <span>Tiempo transcurrido para pintar los puntos (ms): </span>
+      <span id="time"></span>
+    </div>
+
+    <script src="map.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-marker-clusterer/1.0.0/markerclusterer.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3&sensor=false&callback=initMap" async defer></script>
+
+  </body>
+</html>
